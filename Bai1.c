@@ -37,6 +37,10 @@ void printSuccess(const char *message) {
 // Macro xử lý lỗi
 #define HANDLE_ERROR(condition, action, message) do { \
    //Bổ sung nội dung chương trình vào đây
+if(condition)
+{
+    action(message);
+}
 } while(0)
 
 int main() {
